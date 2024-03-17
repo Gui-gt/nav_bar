@@ -51,6 +51,8 @@ a{
     height: 3px;
     background-color: #fff;
     margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 
 }
 @media (max-width: 750px){
@@ -79,13 +81,13 @@ a{
         font-size: 24px;
         opacity: 0px;
     }
-    .nav-list li:nth-child(1) a{
+    .nav-list li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
-    .nav-list li:nth-child(2) a{
+    .nav-list li:nth-child(1) a {
         transition: 0.5s 0.4s;
     }
-    .nav-list li:nth-child(3) a{
+    .nav-list li:nth-child(1) a {
         transition: 0.5s 0.6s;
     }
 
@@ -96,7 +98,24 @@ a{
         pointer-events: all;
     }
 
-    .nav.active .nav-list a{
+    .nav.active .nav-list a {
         opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before{
+        transform: rotate(135deg);
+
+    }
+    
+    .nav.active .hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
 }
