@@ -75,11 +75,28 @@ a{
         gap: 0px;
         pointer-events: none;
     }
+    .nav-list a{
+        font-size: 24px;
+        opacity: 0px;
+    }
+    .nav-list li:nth-child(1) a{
+        transition: 0.5s 0.2s;
+    }
+    .nav-list li:nth-child(2) a{
+        transition: 0.5s 0.4s;
+    }
+    .nav-list li:nth-child(3) a{
+        transition: 0.5s 0.6s;
+    }
 
     /*Estilos ativos*/
 
     .nav.active .nav-list{
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
+    }
+
+    .nav.active .nav-list a{
+        opacity: 1;
     }
 }
