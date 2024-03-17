@@ -37,13 +37,14 @@ a{
     background: center/ cover no-repeat url("pexels-cemrecan-yurtman-17167905.jpg");
 }
 .hamburger{
+    display: none;
     border: none;
     background: none;
     border-top: 3px solid #fff;
     cursor: pointer;
 }
-.hamburger ::before,
-.hamburger::after{
+.hamburger::before,
+.hamburger::after {
     content: " ";
     display: block;
     width: 30px;
@@ -51,4 +52,23 @@ a{
     background-color: #fff;
     margin-top: 5px;
 
+}
+@media (max-width: 750px){
+    .hamburger{
+        display: block;
+
+    }
+    .nav-list{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.94) ;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: ;
+    }
 }
