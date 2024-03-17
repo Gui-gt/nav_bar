@@ -11,12 +11,24 @@ a{
     background-color: #a5c;
     padding-inline: 16px;
 }
-nav{
+.nav{
     max-width: 1280px;
     height: 70px;
     margin-inline: auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
-
+}
+.logo{
+    font-size:48px;
+}
+.nav-list{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+.nav-list a{
+    color: white;
+    font-size: 18px;
+    padding-block: 16px;
 }
