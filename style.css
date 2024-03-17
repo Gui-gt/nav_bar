@@ -64,11 +64,21 @@ a{
         left: 0px;
         width: 100vw;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.94) ;
+        background: rgba(0, 0, 0, 0.94);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
 
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap: ;
+        gap: 0px;
+        pointer-events: none;
+    }
+
+    /*Estilos ativos*/
+
+    .nac.active .nav-list{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
     }
 }
