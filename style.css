@@ -1,1 +1,22 @@
 @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.header{
+    background-color: #a5c;
+    padding-inline: 16px;
+}
+nav{
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
